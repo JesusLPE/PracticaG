@@ -1,0 +1,124 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+app.get('/', (req, res) => {
+    res.send(`
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <title>XD</title>
+            <style>
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-seri>
+                    background-color: #f0f2f5;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+                header {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 20px 0;
+                    margin-bottom: 30px;
+                }
+                .card {
+                    background-color: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    width: 80%;
+                    max-width: 600px;
+                    margin: 0 auto 30px auto;
+                }
+                h1, h2 {
+                    color: #333;
+                }
+                p {
+                    color: #555;
+                    font-size: 18px;
+                }
+                ul {
+                    text-align: left;
+                    margin: 0 auto;
+                    display: inline-block;
+                    color: #333;
+                }
+                table {
+                    margin: 20px auto;
+                    border-collapse: collapse;
+                    width: 80%;
+                    max-width: 600px;
+                }
+                table, th, td {
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    text-align: center;
+                }
+                th {
+                    background-color: #e0e0e0;
+                }
+                footer {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px;
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1>HOLAAAA</h1>
+                <p>¡Tralalero Tralala!</p>
+            </header>
+            <div class="card">
+                <h2>¿Cuánta fuerza tiene Steve de minecraft?</h2>
+                <ul>
+                    <li>Aplicaremos matematicas pero para simplificarlo todo ha>
+                    <li>En Minecraft tienes 36 objetos y en cada espacio te per>
+                    <li>El más pesado basándonos en el mundo real, es un bloque>
+                    <li>No termina aún por qué recuerda que al mismo tiempo pue>
+que podemos asumir que un lingote de oro pesa una novena porción de un bloque d>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>DX</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Oksi</th>
+                            <th>Okno</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>XDXD</td>
+                            <td>Tung tung tung sahur.</td>
+                        </tr>
+                        <tr>
+                            <td>Bombardirocrocodrilo</td>
+                            <td>Completado</td>
+                        </tr>
+                        <tr>
+                            <td>Si</td>
+                            <td>Barcosoy</td>
+                        </tr>
+                        <tr>
+                            <td>Diogenes</td>
+                            <td>Nada</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <footer>
+                <p>Hecho por alguien  - Julio 2025</p>
+            </footer>
+        </body>
+        </html>
+    `);
+});
+app.listen(port, () => {
+    console.log(`App escuchando en http://localhost:${port}`);
+});
